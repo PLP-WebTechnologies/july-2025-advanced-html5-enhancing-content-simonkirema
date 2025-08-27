@@ -1,1 +1,191 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    fieldset {
+      border: 2px solid #4CAF50;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    legend {
+      font-weight: bold;
+      color: #4CAF50;
+    }
+    label {
+      display: block;
+      margin: 8px 0 4px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates lists, tables, media, and a structured form with HTML5 validation.</p>
+  </header>
+
+  <!-- Section 1: Lists -->
+  <section>
+    <h2>Popular Web Technologies</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>SQL</li>
+    </ul>
+  </section>
+
+  <!-- Section 2: Table -->
+  <section>
+    <h2>Programming Language Popularity</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Language</th>
+          <th>Year Created</th>
+          <th>Usage (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Python</td>
+          <td>1991</td>
+          <td>30%</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>1995</td>
+          <td>25%</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>1995</td>
+          <td>15%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3: Media -->
+  <section>
+    <h2>Learning Resources</h2>
+    <p>Watch this sample video tutorial:</p>
+    <video controls width="400">
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>Or listen to this short audio:</p>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Section 4: Form -->
+  <section>
+    <h2>Student Registration Form</h2>
+    <form action="#" method="post">
+      
+      <!-- Personal Info -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required maxlength="100">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="16" max="100" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </fieldset>
+
+      <!-- Account Info -->
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="5" autocomplete="off">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm" name="confirm" required minlength="6">
+      </fieldset>
+
+      <!-- Preferences -->
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+          <option value="">-- Choose One --</option>
+          <option value="web">Web Development</option>
+          <option value="data">Data Science</option>
+          <option value="networking">Networking</option>
+        </select>
+
+        <label>Mode of Study:</label>
+        <input type="radio" id="online" name="mode" value="online" required>
+        <label for="online">Online</label>
+        <input type="radio" id="offline" name="mode" value="offline">
+        <label for="offline">Offline</label>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+      </fieldset>
+
+      <button type="submit">Register</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enhanced HTML5 Assignment</p>
+  </footer>
+</body>
+</html>
